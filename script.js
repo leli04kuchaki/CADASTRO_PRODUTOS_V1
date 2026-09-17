@@ -40,8 +40,6 @@ const listaDeProdutos = [];
 
 const formProduto = document.getElementById("produto-form");
 
-
-
 formProduto.addEventListener("submit", function(event) {
 
     event.preventDefault();
@@ -70,8 +68,6 @@ formProduto.addEventListener("submit", function(event) {
 
     }
 });
-
-
 
 function renderizarTabela() {
 
@@ -102,6 +98,7 @@ function renderizarTabela() {
 }
 
 
+
 function atualizarTotalEstoque() {
 
     const total = listaDeProdutos.reduce((soma, produto) => {
@@ -113,13 +110,13 @@ function atualizarTotalEstoque() {
 }
 
 
+
 function removerProduto(index) {
 
     listaDeProdutos.splice(index, 1);
 
     renderizarTabela();
 }
-
 
 const botaoLimpar = document.getElementById("limpar a tabela");
 
@@ -129,4 +126,3 @@ botaoLimpar.addEventListener("click", function() {
 
     renderizarTabela();
 });
-
