@@ -54,7 +54,7 @@ input{
 
 input:focus{
     outline: none;
-    border-color: #ff8eec;
+    border-color: #2563eb;
 }
 
 button{
@@ -68,12 +68,12 @@ button{
 }
 
 .btn-primary{
-    background-color: #ff8eec;
+    background-color: #2563eb;
     color: white;
 }
 
 .btn-primary:hover{
-    background-color: #ff8eec;
+    background-color: #1d4ed8;
 }
 
 .btn-danger{
@@ -112,7 +112,7 @@ th,td{
 }
 
 th{
-    background-color: #ff8eec;
+    background-color: #2563eb;
     color: white;
 }
 
