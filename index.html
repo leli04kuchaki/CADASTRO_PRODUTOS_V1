@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Cadastro de Produtos</h1>
 
-        
+        <!--Formulário de Entrada-->
         <form id="produto-form">
             <div class="form-group">
                 <label for="nome">Nome do produto:</label>
@@ -18,25 +18,25 @@
             </div>
 
             <div class="form-group">
-                <label for="nome">Preço (R$):</label>
+                <label for="preco">Preço (R$):</label>
                 <input type="number" id="preco" step="0.01" placeholder="Ex. 3500.00" required />
             </div>
 
             <div class="form-group">
-                <label for="nome">Quantidade:</label>
-                <input type="number" id="quantidade" placeholder="Ex. 10" required />
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" placeholder="Ex. 5" required />
             </div>
 
             <button type="submit" class="btn-primary">Adicionar Produto</button>
         </form>
 
- 
-         <div class="resumo do container">
-            <h3 id="total do estoque">Total em Estoque: R$0,00</h3>
-            <button id="limpar a tabela" class="btn-danger">Limpar Tudo</button>
+        <!-- Cabeçalho de Ações e Resumo -->
+         <div class="resumo-container">
+            <h3 id="total-estoque">Total em Estoque: R$0,00</h3>
+            <button id="limpar-tabela" class="btn-danger">Limpar Tudo</button>
          </div>
 
-
+         <!-- Tabela de Exibição -->
           <table id="tabela-produtos">
             <thead>
                 <tr>
@@ -48,7 +48,7 @@
                 </tr>
             </thead>
             <tbody>
-
+                <!-- As linhas da tabela serão inseridas pelo JS -->
             </tbody>
           </table>
     </div>
